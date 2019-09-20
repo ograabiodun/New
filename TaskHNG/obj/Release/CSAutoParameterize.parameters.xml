@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="TaskHNG_dbEntities-Web.config Connection String" description="TaskHNG_dbEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.HngModel.csdl|res://*/Models.HngModel.ssdl|res://*/Models.HngModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=taskhngdbserver.database.windows.net;initial catalog=TaskHNG_db;persist security info=True;user id=mudi;password=1990Dec19.;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\hp\\source\\repos\\TaskHNG\\TaskHNG\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TaskHNG_dbEntities']/@connectionString" />
+  </parameter>
+</parameters>

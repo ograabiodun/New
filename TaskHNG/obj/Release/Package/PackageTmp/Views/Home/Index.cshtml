@@ -1,0 +1,121 @@
+﻿
+@{
+    ViewBag.Title = "Welcome | Team Elite";
+}
+
+
+<h2>Welcome</h2>
+@HttpContext.Current.User.Identity.Name To Team Elite
+
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("Logout", "User", FormMethod.Post, new { id = "logoutForm" }))
+    {
+        <a href="javascript:document .getElementById('logoutForm').submit()">Logout</a>
+    }
+}
+
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4" style="background-color:transparent;color:lightgray;">
+        <h1 class="display-3">A Warm Welcome!</h1>
+        <p class="lead">Enjoy Our Collctions Of Books </p>
+        <br />
+        <hr class="colorgraph">
+    </header>
+
+    <!-- Page Features -->
+    <div class="row text-center">
+
+        <div class=" col-sm-8 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" style="width:400px; height:300px;" src="~/Content/darkroom.jpg" alt="Dark Room" />
+                <div class="card-body">
+                    <h4 class="card-title">Book Title</h4>
+                    <p class="card-text">Dark Room</p>
+                </div>
+                <div class="card-footer">
+                    <span class="btn btn-primary">Find Out More!</span>
+                </div>
+            </div>
+        </div>
+
+        <div class=" col-sm-8 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" style="width:400px; height:300px" alt="Preacher" src="~/Content/download (2).jpg" />
+                <div class="card-body">
+                    <h4 class="card-title">Book Title</h4>
+                    <p class="card-text">Preacher</p>
+                </div>
+                <div class="card-footer">
+                    <span class="btn btn-primary">Find Out More!</span>
+                </div>
+            </div>
+        </div>
+
+        <div class=" col-sm-8 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" style="width:400px; height:300px" src="~/Content/2032e644f0480b9d34abd0d155e2413d.jpg" alt="Power" />
+                <div class="card-body">
+                    <h4 class="card-title">Book Title</h4>>
+                    <p class="card-text">Power</p>
+                </div>
+                <div class="card-footer">
+                    <span class="btn btn-primary">Find Out More!</span>
+                </div>
+            </div>
+        </div>
+
+        <div class=" col-sm-8 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" style="width:400px; height:300px" src="~/Content/ImpulseTitleScreen.png" alt="Impulse" />
+                <div class="card-body">
+                    <h4 class="card-title">Book Title</h4>
+                    <p class="card-text">Impulse</p>
+                </div>
+                <div class="card-footer">
+                    <span class="btn btn-primary">Find Out More!</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.row -->
+    <!-- Page Features -->
+    <div class="row text-center">
+
+        <div class=" col-sm-8 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" style="width:400px; height:300px" alt="Figures That Time Lost" src="~/Content/canva-dark-aurora-background-photo-science-fiction-book-cover-MADOPmgjTUE.jpg" />
+
+                <div class="card-body">
+                    <h4 class="card-title">Book Title</h4>
+                    <p class="card-text">Figures That Time Lost </p>
+                </div>
+                <div class="card-footer">
+                    <span class="btn btn-primary">Find Out More!</span>
+                </div>
+            </div>
+        </div>
+        <div class=" col-sm-8 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" style="width:400px; height:300px" alt="Figures That Time Lost" src="~/Content/canva-dark-aurora-background-photo-science-fiction-book-cover-MADOPmgjTUE.jpg" />
+
+                <div class="card-body">
+                    <h4 class="card-title">Book Title</h4>
+                    <p class="card-text">Figures That Time Lost </p>
+                </div>
+                <div class="card-footer">
+                    <span class="btn btn-primary">Find Out More!</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+
+</div>
+<!-- /.container -->

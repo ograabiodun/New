@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="TaskHNG6" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\hp\\source\\repos\\TaskHNG\\TaskHNG\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\hp\\source\\repos\\TaskHNG\\TaskHNG\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="Add write permission to App_Data Folder" description="Add write permission to App_Data folder" value="TaskHNG6/App_Data" tags="Hidden">
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\hp\\source\\repos\\TaskHNG\\TaskHNG\\obj\\Release\\Package\\PackageTmp\\App_Data$" />
+  </parameter>
+  <parameter name="TaskHNG_dbEntities-Web.config Connection String" description="TaskHNG_dbEntities Connection String used in web.config by the application to access the database." value="metadata=res://*/Models.HngModel.csdl|res://*/Models.HngModel.ssdl|res://*/Models.HngModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=taskhngdbserver.database.windows.net;initial catalog=TaskHNG_db;persist security info=True;user id=mudi;password=1990Dec19.;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\hp\\source\\repos\\TaskHNG\\TaskHNG\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TaskHNG_dbEntities']/@connectionString" />
+  </parameter>
+</parameters>
